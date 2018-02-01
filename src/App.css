@@ -39,8 +39,8 @@ html, body {
   font-size: large;
 }
 
-.leftPanel{
-  background: pink;
+.infoPanel{
+  /* background: pink; */
   width:25%;
 }
 
@@ -53,4 +53,9 @@ html, body {
   color:red;
   height: 100%;
   display: flex;
+}
+
+img {
+  border-radius: 50%;
+  margin: 3px;
 }

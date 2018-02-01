@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import img from './dist/profile.jpg' 
 import * as mainPanel from './MainPanel'
-import * as leftPanel from './LeftPanel'
 
 class App extends Component {
   constructor(props) {
@@ -31,26 +30,23 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Raz Kronenberg</h1>
-
           <h1 className="App-title">Flash notes</h1>
+          <h1 className="App-title">Raz Kronenberg</h1>
         </header>
 
         <div className="appPanel">
-          <div className="leftPanel">
-
-          <img src={img}
-           height="160" width="160"/> 
-
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
-          {/* {<Menue selectedOption = "about"/>} */}
-          </div>
 
           <div className="mainPanel">
             {this.mainPanel}
           </div>
+
+          <div className="infoPanel">
+
+          <img src={img}
+           height="160" width="160"/> 
+
+          </div>
+
         </div>
       </div>
     );
