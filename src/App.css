@@ -27,10 +27,12 @@ html, body {
   height: 50px;
   padding: 20px;
   color: white;
+  display: flex;
 }
 
 .App-title {
   font-size: 1.5em;
+  width:50%;
 }
 
 .App-intro {
